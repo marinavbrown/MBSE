@@ -1,0 +1,148 @@
+Welcome to Scala
+
+This lesson will introduce you to the Scala language using the REPL: the Read-Eval-Print Loop.
+
+
+Start by opening up a terminal. One way to do this is to click the "Terminal" button at the bottom of the Intellij IDE.
+
+Type "scala" at the terminal prompt. You should get a greeting and a new prompt:
+
+    scala>
+
+================================================================
+
+An *expression* is a segment of computer code that can be *evaluated* (i.e., computed) to give a *return value*.
+
+Try typing a simple expression like
+
+    scala> 3+5
+
+and hitting return.
+
+You should get a response that looks like this:
+
+    res0: Int = 8
+
+The Scala compiler Reads your input from the prompt, Evaluates the expression, Prints the return value and then returns to prompt. Hence REPL.
+
+Now try entering each of the following:
+
+    scala> 3<5
+
+    scala> "Hello world".length
+
+    scala> res2 + 5
+
+================================================================
+
+The simplest expressions are called *literals* and are built into the programming language. Try entering each of these into the REPL:
+
+    scala> 157
+
+    scala> 157.35
+
+    scala> "Hello World!"
+
+    scala> true
+
+Each expression has a *type*. Basic types include the integers (Int), (double-precision) floating point numbers (Double), strings (String) and Booleans (Boolean). The REPL gives you the type of an expression with its return value.
+
+A *variable* is a name associated with an element of data, allowing us to refer to it in later computations. Try entering the following sequence of commands:
+
+    scala> var a = 12
+
+    scala> a / 3
+
+    scala> a + 3
+
+================================================================
+
+Scala has two kinds of variables: mutable and immutable. Mutable variables (indicated by the var keyword) can be reassigned to different values. Immutable variables cannot change after they are assigned.
+
+    scala> a = 5
+
+    scala> a + 3
+
+You should get 8 for the last value, because Scala replaced the original value a=12 with the new value a=5. Now try these:
+
+    scala> val b = 12
+
+    scala> b / 3
+
+    scala>  b = 5
+
+At this point, the compiler will throw an error "reassignment to val" telling us that this operation is not allowed. This might seem like an annoyance, but immutability prevents us from building code that is hard to reason about.
+
+We can assign a type to a variable using a colon. We can use this, e.g., to turn an Int into a Double:
+
+    scala> var c : Int = 15
+
+    scala> var d : Double = 15
+
+If we try to assign a value to a variable that has the wrong type, the compiler will throw a "type mismatch" error:
+
+    scala> c = "Fifteen"
+
+You may have wondered about the names "res0", "res1", ... listed in some of the REPL's return values. In a REPL, every expression which isn't explicitly saved to a variable is assigned a brand-new variable of its own that lets us refer back to computations that we've already done. We already used this above when we evaluated the expressions
+
+    scala> res2 + 5
+
+If you type that in again you should get the same answer, and both will refer to the Integer value 11, which is the value of the expression "Hello World".length.
+
+
+================================================================
+
+HOMEWORK PROBLEM 1)
+
+The official API for the Scala language is available at scala-lang.org.
+
+Below we have listed a variety of type-specific operations for associated with types like Int and Boolean.
+
+Look through the following web-pages to identify find the Scala syntax for the operations, and try each one out in your REPL.
+
+When you are done, copy the transcript of your session into a text file and save it for submission.
+
+Scala API References
+
+Integers - https://www.scala-lang.org/api/current/scala/Int.html
+
+Math library - https://www.scala-lang.org/api/current/scala/math/index.html
+
+Strings - https://www.scala-lang.org/api/current/scala/collection/immutable/StringOps.html
+
+Booleans - https://www.scala-lang.org/api/current/scala/Boolean.html
+
+
+Integer operations:
+- equality
+- inequality
+- greater than
+- greater than or equal to
+- plus
+- times
+- minus
+- integer division (e.g, 14 divided by 3 = 4)
+- remainder (e.g., 14 remainder 3 = 2)
+- floating point division (e.g., 1 divided by 4 = 0.25
+- maximum
+- minimum
+- power/exponent
+- square root.
+
+String operations:
+- equality
+- inequality
+- concatenation
+- length
+- character containment (e.g.- does "The quick brown fox" contain the character "a")
+- capitalization
+- initial segment (e.g.- what are the first 10 characters of "The quick brown fox")
+- substring
+
+
+Boolean operations
+- equality
+- and
+- or
+- Xor (exclusive or)
+- ordering/implication
