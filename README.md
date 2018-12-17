@@ -17,11 +17,10 @@ This page has instructions for getting your Scala environment set up and downloa
         - Customize Other Tools - Enable only Terminal
     - Download featured plugins - **You must install the Plugin for Scala**.
 
-3. Once the wizard finishes, Intellij will open a prompt with several options. Choose "Check out from Version Control".
+3. Once the wizard finishes, Intellij will open a prompt with several options. Choose "Check out from Version Management".
   - URL: ```https://github.com/sjbreiner/MBSE```
-  - Choose where to install the files. The directory will be created if it doesn't exist already.
-  - Click "Clone".
-  - Click "Yes". You would like to open the Intellij IDEA project.
+  - Click "Clone"
+  - Click "Yes", you do want to open the Intellij IDEA project.
 
 4. Now the Intellij editor should open.
     - Click "1:Project" on the left margin to open up a project view.
@@ -32,10 +31,11 @@ This page has instructions for getting your Scala environment set up and downloa
         ```"Hello" + " " + "World!"```
     
     - Hit the Play button at the top of the worksheet.
-    - You should get a split window with a response from the compiler on the left (it might take a minute) saying:
+    - You should get a response from the compiler (it might take a minute) saying:
     
         ```res0: String = Hello World!```
     
     - If so, you are good to go and your Scala/Intellij environment is set up correctly!
 
-Now, go take a look at the files in ```Week4``` to get started programming.
+
+Once you get things working, take a look in the ```src``` folder. ```1 - Intro to Scala``` contains a set of introductory exercises to get you started with the language.
