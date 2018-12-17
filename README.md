@@ -2,7 +2,7 @@
 
 This repository contains code examples and exercises for a course in Model-Based Systems Engineering (MBSE). Our computing environment in this class will be the Scala programming language inside the Intellij IDEA development editor.
 
-This page has instructions for getting your Scala environment set up and download the files that are in this repository. Once you're done here, you can take a look in the ```src``` starting with ```Week4```.
+This page has instructions for getting your Scala environment set up and download the files that are in this repository. Once you're done here, you can take a look in the ```src``` folder starting with ```Week4```.
 
 
 ### Installation
@@ -17,10 +17,20 @@ This page has instructions for getting your Scala environment set up and downloa
         - Customize Other Tools - Enable only Terminal
     - Download featured plugins - **You must install the Plugin for Scala**.
 
-3. Once the wizard finishes, Intellij will open a prompt with several options. Choose "Create New Project".
-    - Make sure to click "Scala" under "Additional Libraries and Frameworks".
-    - If you see "No library selected", click "Create" and choose the most recent version listed.
-    - Next you will be prompted to give a project name (I used "MBSE") and (optionally) select a location for your project files.
+3. Once the wizard finishes, Intellij will open a prompt with several options.
+  - Choose "Create New Project".
+    -- Choose "Scala" from the list of languages on the left (it should also list Java, Groovy & Kotlin)
+    -- Make sure "sbt", which should be the default, is highlighted in the language menu. This is the package manager for the Scala language.
+    -- Click "Next".
+  - Project details
+    -- Give your project a name. I'm using "MBSE".
+    -- If you don't like the default location you can change it here.
+    -- For the rest of the settings, I am using
+      --- JDK 1.8
+      --- sbt 1.2.7
+      --- 2.12.8
+    -- It should be OK if your versions are slightly different, but if you run into trouble that could be a reason.
+    -- If you see "No library selected", click "Create" and choose the most recent version listed.
 
 4. Now the Intellij editor should open.
     - Click "1:Project" on the left margin to open up a project view.
