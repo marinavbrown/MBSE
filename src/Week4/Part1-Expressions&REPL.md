@@ -1,8 +1,19 @@
-// Welcome to Scala
+Welcome to Scala
 
-// Expressions
+This lesson will introduce you to the Scala language using the REPL: the Read-Eval-Print Loop.
 
-// An *expression* is a segment of computer code that can be interpreted and computed to yield a *return value*.
+Start by opening up a terminal. One way to do this is to click the "Terminal" button at the bottom of the Intellij IDE.
+
+Type "scala" at the terminal prompt. You should get 
+
+// An *expression* is a segment of
+// computer code that can be
+// *evaluated* (i.e., computed) to
+// yield a *return value*.
+//
+// To evaluate the code in a Scala
+// worksheet like this one, click
+// the Play button above.
 
 3+5
 
