@@ -66,7 +66,7 @@ val divisibleByThree : Int => Boolean = _ % 3 == 0
 
 // Later on we'll use this often for manipulating lists
 
-// The main use for function types is to specify "callback functions" these let us use the same code to do many different things by changing the function that we apply in some step of the process.
+// The main use for function types is to specify "callback functions". These let us use the same code to do many different things by changing the function that we apply in some step of the process.
 
 def capitalizeByFilter(s : String, filter : Int => Boolean) : String = {
   var newString = "";
@@ -80,12 +80,12 @@ def capitalizeByFilter(s : String, filter : Int => Boolean) : String = {
   return newString
 }
 
-capitalizeByFilter("hello world",isEven)
+capitalizeByFilter("hello world",isOdd)
 
 
 // We can use this to easily define lots of special-purpose methods using one general-purpose method that takes a functional argument:
 
-def wonky(s : String) = capitalizeByFilter(s,isOdd)
+def wonky(s : String) = capitalizeByFilter(s,isEven)
 
 wonky("hello world")
 

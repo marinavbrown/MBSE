@@ -5,7 +5,13 @@ This lesson will introduce you to the Scala language using the REPL: the Read-Ev
 
 Start by opening up a terminal. One way to do this is to click the "Terminal" button at the bottom of the Intellij IDE.
 
-Type "scala" at the terminal prompt. You should get a greeting and a new prompt:
+Type "scala" at the terminal prompt.
+
+At this point you may get an error saying something like "scala is not a recognized command"; if not, skip to the next paragraph. If you got an error, that means you need to tell your computer where to find Scala the by adding it to the system's path variable. The instructions are OS-specific, and you might need to reboot
+
+
+
+ You should get a greeting and a new prompt:
 
     scala>
 

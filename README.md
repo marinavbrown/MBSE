@@ -24,9 +24,11 @@ This page has instructions for getting your Scala environment set up and downloa
   - Click "Yes". You would like to open the Intellij IDEA project.
 
 4. Now the Intellij editor should open.
+    - You may get a pop-up saying that sbt wants to import files. Click "Enable auto-import".
     - Click "1:Project" on the left margin to open up a project view.
     - Open the "MBSE" folder and you should see another folder labeled "src".
-    - Right click the "src" folder and select "New > Scala Worksheet"; call the file "HelloWorld"
+    - Right click the "src" folder (Ctrl+Click on some Macs) and select "New > Scala Worksheet"; call the file "HelloWorld"
+    - The IDE may ask if you would like to add the new file to your git project. Click "Remember..." and "Add".
     - On the first line of your worksheet type the following:
     
         ```"Hello" + " " + "World!"```
