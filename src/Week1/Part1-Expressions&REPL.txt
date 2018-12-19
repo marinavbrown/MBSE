@@ -144,6 +144,9 @@ String operations:
 - capitalization
 - initial segment (e.g.- what are the first 10 characters of "The quick brown fox")
 - substring
+- split a string into a list (e.g, split a sentence into a list of words using " " as a token
+
+
 
 
 Boolean operations
