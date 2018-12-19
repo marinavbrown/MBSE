@@ -32,7 +32,7 @@ def square2(x : Int) : String = x*x
 
 // In fact, because of type inference, we usually don't need to explicitly give the type of a method (but if we don't the compiler will sometimes get confused)
 
-def square3(x : Int) = (x * x).toString()
+def square3(x : Int) = (x * x).toString
 
 // Notice the declaration
 

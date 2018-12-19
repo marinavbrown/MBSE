@@ -30,13 +30,14 @@ positive(5)
 
 positive(-5)
 
-// Even though positive and abs return exactly the same value, it has a different type. When an if statement mixes types, the return type will be the nearest common superclass of the two. Here "Any" means that String and Boolean have no common parent class.
+// Even though positive and abs return exactly the same value, it has a different type. When an if statement mixes types, the return type will be the nearest common superclass of the two. Here "Any" means that String and Boolean have no common parent class. We'll see a better way to handle this sort of situation using "Either" types in the lesson on collections.
 
 // Something similar happens if we leave off the else clause::
 
 def positive2(x:Int) = if (x>0) {
   x
 }
+
 
 // Some other nice syntax includes:
 
@@ -54,21 +55,57 @@ def stringSize(s:String) = if (s.length > 12) {
   "short"
 }
 
-// If you find yourself writing a long string of if...else if...else if..., you can also try out the "match" operator, which lets you match an input against a variety of cases, which can be described by types and Boolean conditions. This is often called a switch statement in other languages:
+// If you find yourself writing a long string of if...else if...else if..., you can also try out the "match" operator (similar to a switch statement), which lets you perform different actions depending on characteristics of the input. The cases can use a variety of pattern matching approaches as demonstrated below:
 
-def typeName(x : Any) = x match {
-  case x : String => "string"
-  case x : Float  => "float"
-  case x : Double => "double"
-  case x : Int    => "integer"
-case _            => "I don't know"   // The underscore indicates a default case that will catch anything that hasn't already matched one of the other cases
+def IEatAnything(x : Any):String = x match {
+
+  // You can match against constant values
+  case 0 => "zero"
+  case "lion" => "tiger"
+
+  // You can combine constants (or other patterns) using the or stroke:
+
+  case 2 | 4 | 6 => "small even number"
+
+  // You can match tuples. The second example uses string interpolation.
+  case (a, b) => s"Two inputs: $a and $b"
+  case (_, _, _) => s"Three inputs that I don't use"
+
+  case i: Int => s"Some non-zero integer $i"
+  case _: Boolean => "Unused boolean"
+  case d: Double => s"Twice $d is ${2 * d}"
+
+  // You can match lists and other collections (lessons 5 and 7)
+  case List(0, _, _*) => "A list with 2 or more elements, starting with zero"
+  case _: List[_] => "Some other type of list"
+
+  // In most cases you should close a match statement with an underscore ("wildcard") case to catch any other cases. If you leave it out, you may get a runtime error
+
+  case _ => "I don't know what that is."
 }
 
-typeName("Spencer")
+IEatAnything(0)
+IEatAnything(4)
+IEatAnything(5)
 
-typeName(5.0)
+// Notice that only one case triggers, even though either 0 or 4 could have triggered case i: Int
 
-typeName(5)
+IEatAnything("lion")
+IEatAnything("bear")
+
+IEatAnything(true)
+IEatAnything(12.3)
+
+// To get rid of the MatchError, uncomment the default case in the match statement above
+
+IEatAnything(5,"five")
+IEatAnything(5,"five",'V')
+
+IEatAnything(List(0,1,2,3))
+IEatAnything(List(1,2,3))
+IEatAnything(List("one","two","three"))
+
+
 
 
 //======================================

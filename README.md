@@ -2,7 +2,7 @@
 
 This repository contains code examples and exercises for a course in Model-Based Systems Engineering (MBSE). Our computing environment in this class will be the Scala programming language inside the Intellij IDEA development editor.
 
-This page has instructions for getting your Scala environment set up and download the files that are in this repository. Once you're done here, you can take a look in the ```src``` folder starting with ```Week4```.
+This page has instructions for getting your Scala environment set up and download the files that are in this repository. Once you're done here, you can take a look in the ```src``` folder starting with ```Week1```.
 
 
 ### Scala Installation - Week 1
@@ -45,8 +45,10 @@ That's all you need to do the homework for week 1, which you can find in ```Week
     
 1. Download & install Intellij for your operating system from [here](https://www.jetbrains.com/idea/download/). Make sure to get the free Community version rather than the Ultimate edition.
 
-2. When you run Intellij for the first time, a wizard will set up your installation. For more information on the installation process, you can look [here](https://www.jetbrains.com/help/idea/install-and-set-up-product.html). My recommended option choices are as follows:
+2. When you run Intellij for the first time, the program will ask if you want to import settings; choose "Do Not Import Settings". From here, a wizard will set up your installation. For more information on the installation process, you can look [here](https://www.jetbrains.com/help/idea/install-and-set-up-product.html). My recommended option choices are as follows:
     - UI theme - Your choice
+    - Keymaps (Mac only?) - Your choice
+    - Launcher script (Mac only?) - Check yes to create command-line launcher.
     - Default plugins
         - Disable Build Tools, Test Tools, Swing, Android & Plugin Development
         - Customize Version Control - Enable only Git & GitHub
@@ -69,7 +71,7 @@ That's all you need to do the homework for week 1, which you can find in ```Week
     
         ```"Hello" + " " + "World!"```
     
-    - Hit the Play button at the top of the worksheet.
+    - Hit the Play button at the top of the worksheet (next to the trash can).
     - You should get a split window with a response from the compiler on the left (it might take a minute) saying:
     
         ```res0: String = Hello World!```

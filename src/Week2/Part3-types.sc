@@ -7,10 +7,10 @@
 // One use for products is to return multiple values from a function (e.g., two factors of  an integer)
 
 def factor(x : Int) : (Int,Int) = {
-  for (i <- (2 to x)) {
+  for (i <- 2 to x) {
     if (x % i == 0) return (i,x/i)
   }
-  return (1,x)
+  (1,x)
 }
 
 
@@ -69,7 +69,7 @@ val divisibleByThree : Int => Boolean = _ % 3 == 0
 // The main use for function types is to specify "callback functions". These let us use the same code to do many different things by changing the function that we apply in some step of the process.
 
 def capitalizeByFilter(s : String, filter : Int => Boolean) : String = {
-  var newString = "";
+  var newString = ""
   for (index <- s.indices) {
     if (filter(index)) {
       newString += s(index).toUpper
@@ -77,7 +77,7 @@ def capitalizeByFilter(s : String, filter : Int => Boolean) : String = {
       newString += s(index)
     }
   }
-  return newString
+  newString
 }
 
 capitalizeByFilter("hello world",isOdd)

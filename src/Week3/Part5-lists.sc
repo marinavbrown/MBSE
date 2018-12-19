@@ -36,7 +36,7 @@ val ll = List[Any](1,2,3)
 
 // Here's an example of imperative style. Notice that we have to use a special mutable list type rather than the default constructor included in Scala's standard library.:
 
-var lm = scala.collection.mutable.MutableList(2,3,4,5)
+val lm = scala.collection.mutable.MutableList(2,3,4,5)
 
 var i = 0
 while (i < lm.length) {
@@ -65,13 +65,13 @@ for(i <- lss) {   // Read "for i in lss ..."
 
 val li = List(1,2,3,4,5,6)
 
-li(0)
+li(2)
 
 li(4)
 
 // If we try an index that is too large, we get a run-time error:
 
-//li(7)
+li(7)
 
 
 // Concatenation of two lists
