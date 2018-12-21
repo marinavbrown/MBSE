@@ -7,10 +7,10 @@
 // One use for products is to return multiple values from a function (e.g., two factors of  an integer)
 
 def factor(x : Int) : (Int,Int) = {
-  for (i <- (2 to x)) {
+  for (i <- 2 to x) {
     if (x % i == 0) return (i,x/i)
   }
-  return (1,x)
+  (1,x)
 }
 
 
@@ -28,7 +28,7 @@ pair._2
 
 // Dually, just like we can have functions that take no input, we can also have functions that give no output. In this case we use the "Unit" type to indicate that a function doesn't return a value.
 
-// For example, the greeting we defined before returned a string, but we could have print to the console and not returned anything.
+// For example, the greeting we defined before returned a string, but we could have printed directly to the console and not returned anything.
 
 def greet(): Unit = {
   print("What's your name? ")
@@ -66,10 +66,10 @@ val divisibleByThree : Int => Boolean = _ % 3 == 0
 
 // Later on we'll use this often for manipulating lists
 
-// The main use for function types is to specify "callback functions" these let us use the same code to do many different things by changing the function that we apply in some step of the process.
+// The main use for function types is to specify "callback functions". These let us use the same code to do many different things by changing the function that we apply in some step of the process.
 
 def capitalizeByFilter(s : String, filter : Int => Boolean) : String = {
-  var newString = "";
+  var newString = ""
   for (index <- s.indices) {
     if (filter(index)) {
       newString += s(index).toUpper
@@ -77,15 +77,15 @@ def capitalizeByFilter(s : String, filter : Int => Boolean) : String = {
       newString += s(index)
     }
   }
-  return newString
+  newString
 }
 
-capitalizeByFilter("hello world",isEven)
+capitalizeByFilter("hello world",isOdd)
 
 
 // We can use this to easily define lots of special-purpose methods using one general-purpose method that takes a functional argument:
 
-def wonky(s : String) = capitalizeByFilter(s,isOdd)
+def wonky(s : String) = capitalizeByFilter(s,isEven)
 
 wonky("hello world")
 
