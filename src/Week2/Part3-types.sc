@@ -2,6 +2,10 @@
 
 // In this lesson you will learn how about type constructors, which allow us to combine the basic types Int, String, ... in new ways.
 
+//===========================
+
+// Cartesian Product
+
 // The easiest example is the Cartesian product, which allows us to combine two (or more) types into one. In Scala, the product type of A and B is written with parentheses: (A,B)
 
 // One use for products is to return multiple values from a function (e.g., two factors of  an integer)
@@ -41,6 +45,7 @@ def greet(): Unit = {
 
 // =====================================
 
+// Function types
 
 // Another important constructor is the function type A => B. This lets us represent methods as "first-class citizens" in our programs. This means, in particular, that we can take functions as arguments and return functions as values. Understanding how and why this works might take some time.
 
@@ -95,10 +100,33 @@ val capitalizeFirst = capitalizeByFilter(_, _ == 0)
 
 capitalizeFirst("hello world")
 
-
-
-
-
 // !! Warning !! The definition of capitalizeByFilter written above is really *bad* Scala code. We'll see a better way to do this using "map" in the next lesson.
 
+
+// Higher-order functions
+
+// Another use for the function type is to define higher-order functions, which takes a function as an argument, modifies it in some way, and returns the modified function.
+
+// For example, the following function wraps a timer around a function to see how long it takes
+
+def timed(f : Int => Int) : Int => Int = {
+  x: Int => {
+    val t1 = System.currentTimeMillis()
+    val fVal = f(x)
+    val t2 = System.currentTimeMillis()
+    println(s"On input $x your program took ${t2 - t1} milliseconds to run.")
+    fVal
+  }
+}
+
+def waitToSquare(x : Int): Int = {
+  Thread.sleep(5*x)
+  x*x
+}
+
+
+
+timed(waitToSquare)(2)
+timed(waitToSquare)(10)
+timed(waitToSquare)(100)
 
