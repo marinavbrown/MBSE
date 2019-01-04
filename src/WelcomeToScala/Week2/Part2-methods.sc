@@ -22,7 +22,7 @@ squareLength("hello")
 
 // However, if we try to enter an argument of the wrong type, we get a type mismatch error. Comment out the line below to proceed.
 
-//squareLength(3)
+squareLength(3)
 
 
 // Scala can use *type inference* to figure out the return type of a method just by looking at the expression you give, so most of the time you don't need to provide that information:

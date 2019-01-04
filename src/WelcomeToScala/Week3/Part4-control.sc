@@ -32,7 +32,7 @@ positive(-5)
 
 // Even though positive and abs return exactly the same value, it has a different type. When an if statement mixes types, the return type will be the nearest common superclass of the two. Here "Any" means that String and Boolean have no common parent class. We'll see a better way to handle this sort of situation using "Either" types in the lesson on collections.
 
-// Something similar happens if we leave off the else clause::
+// Something similar happens if we leave off the else clause:
 
 def positive2(x:Int) = if (x>0) {
   x
@@ -80,7 +80,7 @@ def IEatAnything(x : Any):String = x match {
   case _: List[_] => "Some other type of list"
 
   // In most cases you should close a match statement with an underscore ("wildcard") case to catch any other cases. If you leave it out, you may get a runtime error
-  case _ => "I don't know what that is."
+//  case _ => "I don't know what that is."
 }
 
 IEatAnything(0)

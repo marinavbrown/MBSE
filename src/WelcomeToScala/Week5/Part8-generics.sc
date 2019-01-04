@@ -42,11 +42,7 @@ timedSquares( (1 to 30).toList)
 timedConcats( (1 to 30).toList.map(_.toString) )
 
 
-//==================================
+// We can also provide generic types in class definitions. We will see an example of this next week when we define a collection of probability distributions.
 
-// We can also provide generic types in class definitions.
 
-// This approach is used to define the collection types that we saw in lessons 5 and 7. E.g., this is what allows us to distinguish between List[Int] and List[String].
-
-// To demonstrate, we can define a class of multi-sets that keep track of multiplicity but not of order:
 
