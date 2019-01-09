@@ -5,10 +5,15 @@ object Dist {
   implicit def dist2Iterable[A](ds: Dist[A]): Iterable[A] = ds.dist.keySet
 
   def random[A](support : Set[A]) : Dist[A] = this.fromPairs(
-    support.map( a => (a,Math.random()) ).toSeq:_*
+    support.map( a => (a,Math.random()) ).toSeq
   )
 
-  def fromPairs[A](pairs: (A,Double)*): Dist[A] = {
+  def uniform[A](support : Set[A]) : Dist[A] = this.fromPairs(
+    support.toSeq.map(a => (a,(1.0/support.size)))
+  )
+
+  def fromPairs[A](pairs: Seq[(A,Double)]): Dist[A] = {
+    require(pairs.nonEmpty)
 
     val total : Double = pairs.map(pair => Math.abs(pair._2)).sum
 
@@ -24,6 +29,8 @@ object Dist {
   }
 
   def apply[A](as : A*) : Dist[A] = {
+    require(as.nonEmpty)
+
     val dist:Map[A,Double] = as.foldLeft(
       // Initial value
       Map.empty[A,Double].withDefaultValue(0.0)
@@ -33,13 +40,7 @@ object Dist {
     new Dist(dist)
   }
 
-  sealed trait Face
-  case object H extends Face
-  case object T extends Face
 
-  val coin : Dist[Face] = Dist(H,T)
-
-  sealed trait
 
 
 
@@ -63,48 +64,59 @@ class Dist[A](private val inputVector : Map[A,Double]) {
       .map{ case (a,x) => (a, Math.abs(x)/sum) }
   }
 
+  require(sum != 0)
+
   val support : Set[A] = dist.keySet
 
   override def toString() : String = "Dist(" + dist.map(kv => s"${kv._1}:${(kv._2 * 100).toInt}%").mkString(",") + ")"
 
-  def sample() : Option[A] = if (dist.isEmpty) None else {
+
+  class PartialDistributionException extends Exception
+  class EmptyDistributionException extends Exception
+
+  @throws(classOf[Exception])
+  def sample() : A = {
     val rand : Double = Math.random()
-
-    var sum : Double = 0.0
-    for ( kv <- dist ) {
-      sum += kv._2
-      if (sum >= rand) {
-        return Some(kv._1)
-      }
+    dist.foldLeft(0.0){
+      case (sum,(a,p)) => if (sum + p > rand) return a else sum + p
     }
-    // This should never happen
-    return None
+    throw new PartialDistributionException
+
   }
 
-  def foreach(f : A => Unit) : Unit = {
-    val opt = this.sample
-    opt match {
-      case Some(a) => f(a)
-      case _ =>
-    }
-  }
+  def sample(n : Int) : Seq[A] = (1 to n).map(i => sample()).toSeq
+
+  def foreach(f : A => Unit) : Unit = f(this.sample())
 
   def map[B](f : A => B) : Dist[B] = {
-    val newPairs = this.dist.toSeq.map{ case (a,p) => (f(a),p) }
-    Dist.fromPairs(newPairs:_*)
+    val newPairs : Seq[(B,Double)] = this.dist.toSeq.map{ case (a,p) => (f(a),p) }
+    Dist.fromPairs(newPairs)
   }
 
   def flatMap[B](f : A => Dist[B]) : Dist[B] = {
-    val newPairs:Seq[(B,Double)] = for {
+    val newPairs : Seq[(B,Double)] = for {
       (a,p) <- dist.toSeq
       (b,q) <- f(a).dist.toSeq
     } yield (b,p*q)
-    Dist.fromPairs(newPairs:_*)
+    Dist.fromPairs(newPairs)
   }
 
-  def withFilter(p : A => Boolean) : Dist[A] = {
-    val subDist : Map[A,Double] = dist.filterKeys(p)
-    new Dist(subDist)
+  def withFilter(test : A => Boolean) : Dist[A] = {
+    val newPairs : Seq[(A,Double)] = for {
+      (a,p) <- dist.toSeq
+      if test(a)
+    } yield (a,p)
+    if (newPairs.nonEmpty) Dist.fromPairs(newPairs)
+    else throw new EmptyDistributionException
+  }
+
+  def prod[B](that : Dist[B]) : Dist[(A,B)] = {
+    val prodMap:Map[(A,B),Double] = for {
+      (a,p) <- this.dist
+      (b,q) <- that.dist
+    } yield ((a,b), p*q)
+
+    new Dist(prodMap)
   }
 
 }
