@@ -1,4 +1,4 @@
-# Model-Based Systems Engineering
+# -> Model-Based Systems Engineering <-
 
 This repository contains code examples and exercises for a course in Model-Based Systems Engineering (MBSE). Our computing environment in this class will be the Scala programming language inside the Intellij IDEA development editor.
 
