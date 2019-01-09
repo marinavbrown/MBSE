@@ -8,7 +8,8 @@
 
 ---
 ### Basic Course Information
-#####Time & Location:
+
+##### Time & Location:
 
 Monroe Hall, Room 351
 
@@ -82,6 +83,7 @@ Your grade will be computed as a weighted average with the following weights:
 | HW2 | 12% | Group Report | 25% |
 | HW3 | 12% | Participation | 5% |
 | Quizzes | 10% | | |
+
 The translation between numeric and letter grades is:
 
 | | | | | | |
@@ -95,7 +97,7 @@ The translation between numeric and letter grades is:
 
 Although attendance is not strictly required, there will be a quiz at the beginning of most class meetings.
 
-In the case of emergencies or *pre-approved* absences (e.g., [religious holiday](https://registrar.gwu.edu/university-policies#holidays)) the quiz will be substituted by a written assignment. A request for approved absence must be submitted to the instructors by email at least one week prior **No absences will be approved for the presentation dates 3/18 and 4/29/**
+In the case of emergencies or *pre-approved* absences (e.g., [religious holiday](https://registrar.gwu.edu/university-policies#holidays)) the quiz will be substituted by a written assignment. A request for approved absence must be submitted to the instructors by email at least one week prior. **No absences will be approved for the presentation dates 3/18 and 4/29**.
 
 #### Late Work
 
@@ -119,7 +121,7 @@ Many activities in class will involve sharing, explaining and critiquing simple 
 
 ---
 
-###Course Objectives
+### Course Objectives
 
 #### Learning Outcomes
 On completion of the course, students will be able to: 
