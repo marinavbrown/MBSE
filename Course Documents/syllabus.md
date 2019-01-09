@@ -1,4 +1,3 @@
-->
 ## EMSE 6817: Model-Based Systems Engineering (Spring 2019)
 
 ### Instructors:
