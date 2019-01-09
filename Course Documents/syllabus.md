@@ -22,7 +22,11 @@ Monday, 3:30 PM - 6:00 PM
 ##### Course Materials:
  Course materials will be distributed electronically through the course [Github site](https://github.com/sjbreiner/MBSE).
  
- Reading: 
+ Readings will be posted [here](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/Reading/reading.md).
+ 
+ Homeworks will be posted [here](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/Homework)
+ 
+ Other course documents (like this syllabus) can be found [here](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/)
 
 ---
 
@@ -65,6 +69,8 @@ The approach that we follow in this course is based on a branch of mathematics c
 | 13 | 4/29 | System models| **Group Presentation**|
 | * | 5/6 | No exam. Final Report Due  | **Group Report Due.** |
 
+\*Subject to change
+
 ---
 ### Grading
 
@@ -85,11 +91,16 @@ The translation between numeric and letter grades is:
 | **A-** | 90-92.9 | **B** | 80-86.9 | **C** | 64-73.9 |
 | **F** | < 60 | **B-** | 77-79.9 | **C-** | 60-63.9 |
 
+
 #### Attendance
+
+Although attendance is not strictly required, there will be a quiz at the beginning of most class meetings.
+
+In the case of emergencies or *pre-approved* absences (e.g., [religious holiday](https://registrar.gwu.edu/university-policies#holidays)) the quiz will be substituted by a written assignment. A request for approved absence must be submitted to the instructors by email at least one week prior **No absences will be approved for the presentation dates 3/18 and 4/29/**
 
 #### Late Work
 
-Assignments are due **before** 3:30 PM (class time) on the date listed in the course schedule above. All assignments should be submitted via email to both Spencer and Sub (addresses listed above).
+Assignments are due **before** 3:30 PM (class time) on the date listed in the course schedule above. All assignments should be submitted to both instructors via email (addresses listed above).
 
 Late submissions will be penalized as follows:
 
@@ -97,15 +108,21 @@ Late submissions will be penalized as follows:
 + 24-72 hours: 70% credit
 + Any assignment more than three days late will be dealt with on an individual basis and **may not be accepted**.
 
+#### Reading
+
+We will assign readings for each week of class, which will be posted [here](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/Reading/reading.md), organized by week. New readings will be posted no later than classtime, one week before they are due.
+
+You are responsible for studying all assigned readings by the beginning of the following class. Basic material from the reading will often appear in the weekly quizzes, and you may be asked to summarize elements of the reading in class.
+
 #### Participation
 
-
-
-
+Many activities in class will involve sharing, explaining and critiquing simple models that we develop in class. All students will be expected to actively participate in these discussions, and your contribution to the class will be reflected in a small portion (5%) of your overall grade.
 
 ---
 
-#### Course Learning Outcomes
+###Course Objectives
+
+#### Learning Outcomes
 On completion of the course, students will be able to: 
 + Model a system processes at 2-3 levels of abstraction, and formally document the relationships between these models.
 + Convert a process representation into a behavioral model in a formal domain such as  probability, dynamical systems or computer science.
@@ -118,6 +135,52 @@ On completion of the course, students will be able to:
 + To enhance and evaluate a student’s academic independence and critical thinking.
 + To regularly solicit feedback to improve the quality of lectures and course materials.
 
+---
+
+### Other information
+
+#### Special Needs
+
+If you have any special needs which may impact your ability to succeed in the course, please let the instructors know within the first two weeks of class (before the end of January) to develop an alternative work plan.
+
+You may also want to contact one of GWU's student support services:
++ [Disability Support Services (DSS)](https://disabilitysupport.gwu.edu/), 202-994-8250, Rome Hall, Suite 102
++ [Mental Health Services](https://counselingcenter.gwu.edu/), 202-994-5300 
 
 
-\*Subject to change
+
+#### Academic Integrity:
+
+You will be expected to behave according to basic standards of academic integrity. For the full code of conduct see the [GWU Code of Academic Integrity](https://studentconduct.gwu.edu/code-academic-integrity).
+
+Always:
++ Acknowledge all sources and collaborators for homework, projects and other assignments.
++ Work independently on quizzes and other assignments specified as individual work.
++ Acknowledge any assistance that you provide to other students.
+
+Never:
++ Cheat.
++ Misrepresent your work as someone else's.
++ Take credit for the work of others.
++ Fabricate information.
++ Plagiarize.
+
+With regards to plagiarism, it is not okay to copy or to paraphrase other people’s words and ideas without giving proper attribution (e.g., quotation marks for direct quotes, reference and citation, etc.). When paraphrasing, actually use your own words. Do not, e.g., substitute synonyms into the original author's sentence.
+
+You are expected to know how to correctly quote and cite material. If you need assistance with this, please contacct the [GWU Writing Center](https://writingcenter.gwu.edu/).
+
+#### Security and Safety
+
+Current information on any safety & security issues around campus (e.g., weather closures) can be found [campus advisory page](http://www.campusadvisories.gwu.edu/). You may also want to enrol in mobile alerts by signing into the [GWeb Information](https://banweb.gwu.edu/PRODCartridge/twbkwbis.P_WWW) site and updating your contact information to include mobile devices.
+
+In the event of a life-threatening emergency on campus, please call 202-994-6111.
+
+
+
+
+
+
+
+
+
+
