@@ -35,9 +35,9 @@ Monday, 3:30 PM - 6:00 PM
 This course will introduce students to a set of general techniques for building formal models based in mathematics and computation. We will develop a compositional approach to model-building, based on a small number of modeling primitives which can assembled in many different ways to address many different questions. 
 
 The first half of the course will cover process representations, using them to explore the mantra: *A model is a mapping*. In particular, any model involves three parts which together define some sort of calculation:
-+ An abstract process representations expressed in terms of information and resource flows. This provides the plan for a calculation.
-+ A mathematical formalism such as probability or differential equations. This tells us how to perform the steps of the calculation.
-+ An assignment of abstract process elements (e.g., subprocesses) to mathematical entities (e.g., probabilities or differential equations). This tells us the actual values to use when evaluating the calculation.
+- An abstract process representations expressed in terms of information and resource flows. This provides the plan for a calculation.
+- A mathematical formalism such as probability or differential equations. This tells us how to perform the steps of the calculation.
+- An assignment of abstract process elements (e.g., subprocesses) to mathematical entities (e.g., probabilities or differential equations). This tells us the actual values to use when evaluating the calculation.
 
 The second half of the class will cover class-based and ontological approaches to system description. These use logical and graph-based representations to package, organize and validate system data. More importantly, we will discuss methods for integrating overlapping models, which allows us to build complex system-level models by putting together simpler pieces.
 
@@ -88,7 +88,7 @@ The translation between numeric and letter grades is:
 
 | | | | | | |
 |---|---|---|---|---|---|
-| **A** | 93-100+ |  **B+** | 87-89.9 | **C+** | 74-76.9 |
+| **A** | 93-100- |  **B-** | 87-89.9 | **C-** | 74-76.9 |
 | **A-** | 90-92.9 | **B** | 80-86.9 | **C** | 64-73.9 |
 | **F** | < 60 | **B-** | 77-79.9 | **C-** | 60-63.9 |
 
@@ -105,9 +105,9 @@ Assignments are due **before** 3:30 PM (class time) on the date listed in the co
 
 Late submissions will be penalized as follows:
 
-+ 0-24 hours late (including during class): 90% credit
-+ 24-72 hours: 70% credit
-+ Any assignment more than three days late will be dealt with on an individual basis and **may not be accepted**.
+- 0-24 hours late (including during class): 90% credit
+- 24-72 hours: 70% credit
+- Any assignment more than three days late will be dealt with on an individual basis and **may not be accepted**.
 
 #### Reading
 
@@ -124,17 +124,19 @@ Many activities in class will involve sharing, explaining and critiquing simple 
 ### Course Objectives
 
 #### Learning Outcomes
+
 On completion of the course, students will be able to: 
-+ Model a system processes at 2-3 levels of abstraction, and formally document the relationships between these models.
-+ Convert a process representation into a behavioral model in a formal domain such as  probability, dynamical systems or computer science.
-+ Build a domain-specific language (semantic model) to represent background knowledge and requirements for some aspect of a system process. 
-+ Build formal mappings (bridges) between multiple models, and use these to analyze a systems-level question which depends on multiple domains or sub-systems.
+
+- Model a system processes at 2-3 levels of abstraction, and formally document the relationships between these models.
+- Convert a process representation into a behavioral model in a formal domain such as  probability, dynamical systems or computer science.
+- Build a domain-specific language (semantic model) to represent background knowledge and requirements for some aspect of a system process. 
+- Build formal mappings (bridges) between multiple models, and use these to analyze a systems-level question which depends on multiple domains or sub-systems.
 
 #### Instructor’s Mission Statement
-+ To provide students with tools and methods for developing formal models of system organization and behavior, and to illustrate these through diverse examples.
-+ To engage each student in a concrete application of these methods based on their own expertise and interest.
-+ To enhance and evaluate a student’s academic independence and critical thinking.
-+ To regularly solicit feedback to improve the quality of lectures and course materials.
+- To provide students with tools and methods for developing formal models of system organization and behavior, and to illustrate these through diverse examples.
+- To engage each student in a concrete application of these methods based on their own expertise and interest.
+- To enhance and evaluate a student’s academic independence and critical thinking.
+- To regularly solicit feedback to improve the quality of lectures and course materials.
 
 ---
 
@@ -145,8 +147,9 @@ On completion of the course, students will be able to:
 If you have any special needs which may impact your ability to succeed in the course, please let the instructors know within the first two weeks of class (before the end of January) to develop an alternative work plan.
 
 You may also want to contact one of GWU's student support services:
-+ [Disability Support Services (DSS)](https://disabilitysupport.gwu.edu/), 202-994-8250, Rome Hall, Suite 102
-+ [Mental Health Services](https://counselingcenter.gwu.edu/), 202-994-5300 
+
+- [Disability Support Services (DSS)](https://disabilitysupport.gwu.edu/), 202-994-8250, Rome Hall, Suite 102
+- [Mental Health Services](https://counselingcenter.gwu.edu/), 202-994-5300 
 
 
 
@@ -155,16 +158,18 @@ You may also want to contact one of GWU's student support services:
 You will be expected to behave according to basic standards of academic integrity. For the full code of conduct see the [GWU Code of Academic Integrity](https://studentconduct.gwu.edu/code-academic-integrity).
 
 Always:
-+ Acknowledge all sources and collaborators for homework, projects and other assignments.
-+ Work independently on quizzes and other assignments specified as individual work.
-+ Acknowledge any assistance that you provide to other students.
+
+- Acknowledge all sources and collaborators for homework, projects and other assignments.
+- Work independently on quizzes and other assignments specified as individual work.
+- Acknowledge any assistance that you provide to other students.
 
 Never:
-+ Cheat.
-+ Misrepresent your work as someone else's.
-+ Take credit for the work of others.
-+ Fabricate information.
-+ Plagiarize.
+
+- Cheat.
+- Misrepresent your work as someone else's.
+- Take credit for the work of others.
+- Fabricate information.
+- Plagiarize.
 
 With regards to plagiarism, it is not okay to copy or to paraphrase other people’s words and ideas without giving proper attribution (e.g., quotation marks for direct quotes, reference and citation, etc.). When paraphrasing, actually use your own words. Do not, e.g., substitute synonyms into the original author's sentence.
 

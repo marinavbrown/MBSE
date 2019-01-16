@@ -1,6 +1,13 @@
-Welcome to Scala
+## Welcome to Scala
 
-This lesson will introduce you to the Scala language using the REPL: the Read-Eval-Print Loop.
+### Lesson 1
+
+
+This lesson will introduce you to the Scala language using the the Read-Eval-Print Loop (REPL).
+
+You should already have Scala and Intellij installed; if not, go to the installation instructions [here](
+
+
 
 
 Start by opening up a terminal. One way to do this is to click the "Terminal" button at the bottom of the Intellij IDE.
