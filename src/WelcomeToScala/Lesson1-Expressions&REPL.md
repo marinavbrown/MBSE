@@ -1,28 +1,19 @@
 ## Welcome to Scala
 
-### Lesson 1
+### Lesson 1 - REPL Expressions
 
 
 This lesson will introduce you to the Scala language using the the Read-Eval-Print Loop (REPL).
 
-You should already have Scala and Intellij installed; if not, go to the installation instructions [here](
+You should already have Scala and Intellij installed; if not, go to the installation instructions [here](https://github.com/sjbreiner/MBSE/blob/master/src/WelcomeToScala/Installation.md).
 
+Start by opening up a terminal. One way to do this is to use the IDE's integrated terminal by clicking the "Terminal" button at the bottom of the Intellij window.
 
-
-
-Start by opening up a terminal. One way to do this is to click the "Terminal" button at the bottom of the Intellij IDE.
-
-Type "scala" at the terminal prompt.
-
-At this point you may get an error saying something like "scala is not a recognized command"; if not, skip to the next paragraph. If you got an error, that means you need to tell your computer where to find Scala the by adding it to the system's path variable. The instructions are OS-specific, and you might need to reboot
-
-
-
- You should get a greeting and a new prompt:
+Now type "scala" at the terminal prompt. You should get a greeting and a new prompt:
 
     scala>
 
-================================================================
+---
 
 An *expression* is a segment of computer code that can be *evaluated* (i.e., computed) to give a *return value*.
 
@@ -36,7 +27,7 @@ You should get a response that looks like this:
 
     res0: Int = 8
 
-The Scala compiler Reads your input from the prompt, Evaluates the expression, Prints the return value and then returns to prompt. Hence REPL.
+The Scala compiler **R**eads your input from the prompt, **E**valuates the expression, **P**rints the return value and then **L**oops back to the prompt. Hence REPL.
 
 Now try entering each of the following:
 
@@ -48,7 +39,7 @@ Now try entering each of the following:
 
 In the statement above "res2" refers to the result from the previous computation. We'll see more about this in the section on variables below.
 
-================================================================
+---
 
 The simplest expressions are called *literals* and are built into the programming language. Try entering each of these into the REPL:
 
@@ -60,7 +51,7 @@ The simplest expressions are called *literals* and are built into the programmin
 
     scala> true
 
-Each expression has a *type*. Basic types include the integers (Int), (double-precision) floating point numbers (Double), strings (String) and Booleans (Boolean). The REPL gives you the type of an expression with its return value.
+Each expression has a *type*. Basic types include the integers (```Int```), (double-precision) floating point numbers (```Double```), strings (```String```) and Booleans (```Boolean```). The REPL gives you the type of an expression with its return value.
 
 A *variable* is a name associated with an element of data, allowing us to refer to it in later computations. Try entering the following sequence of commands:
 
@@ -70,15 +61,17 @@ A *variable* is a name associated with an element of data, allowing us to refer 
 
     scala> a + 3
 
-================================================================
+---
 
-Scala has two kinds of variables: mutable and immutable. Mutable variables (indicated by the "var" keyword) can be reassigned to different values. Immutable variables (indicated by "val") cannot change after they are assigned.
+Scala has two kinds of variables: mutable and immutable. Mutable variables (indicated by the ```var``` keyword) can be reassigned to different values. Immutable variables (indicated by ```val```) cannot change after they are assigned.
 
     scala> a = 5
 
     scala> a + 3
 
-You should get 8 for the last value, because Scala replaced the original value a=12 with the new value a=5. Now try these:
+You should get 8 for the last value, because Scala replaced the original value ```a=12``` with the new value ```a=5```.
+
+Note that ```a``` was declared as a ```var```. Now try these:
 
     scala> val b = 12
 
@@ -86,36 +79,38 @@ You should get 8 for the last value, because Scala replaced the original value a
 
     scala>  b = 5
 
-At this point, the compiler will throw an error "reassignment to val" telling us that this operation is not allowed. This might seem like an annoyance, but immutability prevents us from building code that is hard to reason about.
+At this point, the compiler will throw an error ```reassignment to val``` telling us that this operation is not allowed. This might seem like an annoyance. The main advantage is that code using mutable data structures is harder to reason about.
 
-We can assign a type to a variable using a colon. We can use this, e.g., to turn an Int into a Double:
+Scala computes a type for every expression, but we can also assign types explicitly using a colon (```:```). We can use this, e.g., to turn an ```Int``` into a ```Double```:
 
     scala> var c : Int = 15
 
     scala> var d : Double = 15
 
-If we try to assign a value to a variable that has the wrong type, the compiler will throw a "type mismatch" error:
+However, if we try to assign a value to a variable that has the wrong type, the compiler will throw a ```type mismatch``` error:
 
     scala> c = "Fifteen"
 
-You may have wondered about the names "res0", "res1", ... listed in some of the REPL's return values. In a REPL, every expression which isn't explicitly saved to a variable is assigned a brand-new variable of its own that lets us refer back to computations that we've already done. We already used this above when we evaluated the expressions
+You may have wondered about the names ```res0```, ```res1```, ... listed in some of the REPL's return values. In a REPL, every expression which isn't explicitly saved to a variable is assigned a brand-new variable of its own that lets us refer back to computations that we've already done. We already used this above when we evaluated the expression
 
     scala> res2 + 5
 
-If you type that in again you should get the same answer, and both will refer to the Int value 11, which is the value of the expression "Hello World".length.
+If you type that in again you should get the same answer, and both will refer to the ```Int``` value 11, which is the value of the expression ```"Hello World".length```.
 
 
-================================================================
+---
 
-HOMEWORK PROBLEM 1)
+#### Homework
 
 The official API for the Scala language is available at scala-lang.org.
 
-Below we have listed a variety of type-specific operations associated with types like Int and Boolean.
+Below we have listed a variety of type-specific operations associated with types like ```Int``` and ```Boolean```.
 
 Look through the following web-pages to identify the Scala syntax for all the operations, and try each one out in your REPL.
 
-When you are done, copy the transcript of your session into a text file and save it for submission.
+When you are done, copy the transcript of your session and save it as a text file ```YourLastName-Lesson1.txt```.
+
+---
 
 Scala API References
 
@@ -127,8 +122,10 @@ Strings - https://www.scala-lang.org/api/current/scala/collection/immutable/Stri
 
 Booleans - https://www.scala-lang.org/api/current/scala/Boolean.html
 
+---
 
-Integer operations:
+##### Problem 1) Integer Operations
+
 - equality
 - inequality
 - greater than
@@ -144,6 +141,8 @@ Integer operations:
 - power/exponent
 - square root
 
+##### Problem 2) String Operations
+
 String operations:
 - equality
 - inequality
@@ -157,7 +156,7 @@ String operations:
 - string interpolation (do a google search for this)
 
 
-
+##### Problem 3) Boolean Operations
 
 Boolean operations
 - equality

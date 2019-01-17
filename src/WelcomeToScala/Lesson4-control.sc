@@ -1,6 +1,6 @@
 // Welcome to Scala
 
-// In this lesson we will review the Scala syntax for control operators like if...then, and for loops. This is mainly a reference for you.
+// In this lesson we will review the Scala syntax for control operators like if...then, and for loops. This is mainly a reference for you, and there is no homework in this lesson.
 
 //==================================
 
@@ -18,7 +18,7 @@ abs(10)
 
 abs(-10)
 
-// Scala knows that whichever way the conditional evaluates, the overall statement will return a string. However:
+// Notice that Scala has inferred that abs i returns an integer because, whichever way the conditional evaluates, the overall statement will return an Int. However:
 
 def positive(x:Int) = if (x>0) {
   x
@@ -26,11 +26,11 @@ def positive(x:Int) = if (x>0) {
   "negative"
 }
 
-positive(5)
+positive(10)
 
-positive(-5)
+positive(-10)
 
-// Even though positive and abs return exactly the same value, it has a different type. When an if statement mixes types, the return type will be the nearest common superclass of the two. Here "Any" means that String and Boolean have no common parent class. We'll see a better way to handle this sort of situation using "Either" types in the lesson on collections.
+// Even though pos(10) and abs(10) return the same value, it has a different type. When an if statement mixes types, the return type will be a superclass of the two alternatives. Here "Any" means that String and Boolean have no common parent class. We'll see a better way to handle this sort of situation using "Either" types in the lesson on collections.
 
 // Something similar happens if we leave off the else clause:
 
@@ -63,7 +63,7 @@ def IEatAnything(x : Any):String = x match {
   case 0 => "zero"
   case "lion" => "tiger"
 
-  // You can combine constants (or other patterns) using the or stroke "|":
+  // You can combine constants (or other patterns) using the | stroke:
   case 2 | 4 | 6 => "small even number"
 
   // You can match tuples. The second example uses string interpolation.
@@ -79,8 +79,8 @@ def IEatAnything(x : Any):String = x match {
   case List(0, _, _*) => "A list with 2 or more elements, starting with zero"
   case _: List[_] => "Some other type of list"
 
-  // In most cases you should close a match statement with an underscore ("wildcard") case to catch any other cases. If you leave it out, you may get a runtime error
-//  case _ => "I don't know what that is."
+  // In most cases you should close a match statement with an underscore ("wildcard") case to catch any other alternatives that you might have missed. If you leave it out, you may get a runtime error
+  case _ => "I don't know what that is."
 }
 
 IEatAnything(0)
@@ -95,7 +95,7 @@ IEatAnything("bear")
 IEatAnything(true)
 IEatAnything(12.3)
 
-// To get rid of the MatchError, uncomment the default case in the match statement above
+// To get rid of the MatchError, uncomment the wildcard case in the match statement above
 
 IEatAnything(5,"five")
 IEatAnything(5,"five",'V')
@@ -119,9 +119,9 @@ for (i <- 1 to 5) {
 
 // We can put multiple ranges into the same for statement. Notice that "to" generates an inclusive range and "until" leaves off the last element:
 
-for (i <- 1 until 4; j <- 1 to 10) {
+for (i <- 1 until 4; j <- 1 to 5) {
   print((i,j))
-  if (j == 10) println()
+  if (j == 5) println()
 }
 
 // We can also use one variable in the range of another:
@@ -133,12 +133,11 @@ for (i <- 1 to 5; j <- 1 to i) {
 
 // Another useful feature is the ability to build conditions (called guards) into the for clause:
 
-for (i <- 1 to 4; j <- 1 to 10; if (i + j) % 2 == 0) {
-  print((i,j))
-  if (j >= 9) println()
+for (i <- 1 to 10; if i % 2 == 0) {
+  println(i)
 }
 
-// If the condition in the for statement gets too long, you can put it in curly braces on multiple lines:
+// If the condition in the for statement gets too long, you can put it in curly braces and use multiple lines:
 
 for {
   i <- 1 to 3

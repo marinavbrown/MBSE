@@ -1,12 +1,16 @@
 // Welcome to Scala
 
-// In this lesson you will learn how about type constructors, which allow us to combine the basic types Int, String, ... in new ways.
+// In this lesson you will learn about type constructors, which allow us to combine the basic types Int, String, etc. in new ways.
 
 //===========================
 
 // Cartesian Product
 
 // The easiest example is the Cartesian product, which allows us to combine two (or more) types into one. In Scala, the product type of A and B is written with parentheses: (A,B)
+
+
+
+type IntStringProduct = (Int,String)
 
 // One use for products is to return multiple values from a function (e.g., two factors of  an integer)
 
@@ -29,6 +33,7 @@ pair._2
 
 // Notice that the indices for pairs/tuples are based at 1 (rather than 0) unlike Lists and other Scala constructs.
 
+//=======================
 
 // Dually, just like we can have functions that take no input, we can also have functions that give no output. In this case we use the "Unit" type to indicate that a function doesn't return a value.
 
@@ -61,7 +66,7 @@ isEven(5)
 
 isEven(6)
 
-// We also have the option to give the function type explicitly. In this case we don't need to specify the type of the variable again.
+// We also have the option to give the function type explicitly. If we do this we don't need to specify the type of the variable again.
 
 val isOdd : Int => Boolean = x => x % 2 == 1
 
@@ -69,7 +74,7 @@ val isOdd : Int => Boolean = x => x % 2 == 1
 
 val divisibleByThree : Int => Boolean = _ % 3 == 0
 
-// Later on we'll use this often for manipulating lists
+// Later on we'll use this often for manipulating lists.
 
 // The main use for function types is to specify "callback functions". These let us use the same code to do many different things by changing the function that we apply in some step of the process.
 
@@ -129,4 +134,92 @@ def waitToSquare(x : Int): Int = {
 timed(waitToSquare)(2)
 timed(waitToSquare)(10)
 timed(waitToSquare)(100)
+
+//=================
+
+// Homework
+
+// Create a new Scala worksheet to store the answers to the following problems. Name the worksheet
+
+//      YourLastName-Lesson3.sc
+
+
+
+//=============================
+
+// Problem 1) Implement a method parseName which takes a string argument (assumed to be someone's full name) and breaks it into three parts--first name, middle name(s) and last name--returned as a Cartesian product. For example we should get the following behavior:
+
+// parseName("Spencer Joseph Breiner")
+// ("Spencer","Joseph","Breiner")
+
+// If fewer than three names are provided return empty strings for middle and (possibly) first name. If more than three names are provided, put any extras into the middle string:
+
+// parseName("Spencer Breiner")
+// ("Spencer","","Breiner")
+
+// parseName("Breiner")
+// ("","","Breiner")
+
+// parseName("Spencer St. Cloud von Berthold Breiner")
+// ("Spencer","St. Cloud von Berthold","Breiner")
+
+
+// Bonus Point
+// + Strip all non-letter characters (except possibly spaces in middle names) from all output strings.
+// + Fix the capitalization of all names (including multiple middle names) so that the first letter is capitalized and the rest are not.
+
+// parseName("speNCer St. Cloud von Berthold Breiner")
+// ("Spencer","St Cloud Von Berthold","Breiner")
+
+//==================
+
+// Problem 2)
+
+// Using your solution to problem 1, write a method buildFormLetter with the following signature:
+
+// def buildFormLetter(name:String,income:Int):String
+
+// Your method will:
+// Check whether income is at least 100000
+// If so, return the string
+"Hello _______, I'm pleased to inform you ..."
+// Otherwise, return the string
+"Dear Mr./Ms. ______, I am sorry to inform you ..."
+
+// For the first case, replace the blank with the first name parsed from the input string; in the second case, use the last name.
+
+//=====================
+
+// Problem 3)
+
+// In Lesson 2, Problem 1 you implemented four methods using the def keyword.
+
+// Reimplement those methods using the val keyword and function types. For methods 1 and 3, explicitly provide the type of the function (as in the definition of isOdd); for methods 2 and 4, leave the function type implicit (as in the definition of isEven)
+
+//======================
+
+// Problem 4)
+
+// Implement a higher-order function with the following signature:
+
+// def randomly(f : Int => Int, g : Int => Int) : Int => Int
+
+// So randomly(f,g) is a function. When we evaluate this function on an input x, it should randomly return either f(x) or g(x).
+
+// For example, we might get the following behavior:
+
+// val h = randomly(x => x + x, x => x * x)
+// h(3) = 9
+// h(3) = 9
+// h(3) = 6
+// h(4) = 16
+// h(4) = 8
+// h(4) = 8
+
+// Of course, if we run the program again we will likely get a different sequence of answers.
+
+// Bonus Point
+
+// Reimplement randomly so that it can take an arbitrary number of functions as arguments
+
 

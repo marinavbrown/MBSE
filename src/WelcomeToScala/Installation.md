@@ -34,8 +34,11 @@ If you have run into problems during the installation (not unlikely!), try posti
     - You should get a prompt that looks like this:
     
         ```scala>```
-    - If you get another error like "command not recognized", try googling "add scala to system path" plus your operating system.
-    - Type the following and hit return:
+        
+    - At this point you may get an error saying something like "scala is not a recognized command". If so, you need to tell your computer where to find Scala the by adding it to the system's path variable.
+        - The instructions are OS-specific, and you might need to reboot.
+        - If you need help try googling "add scala to system path" plus your operating system.
+    - Once you get a ```scala>``` prompt, type the following and hit return:
     
         ```"Hello" + " " + "world!"```
     - You should get a response that looks like this:
@@ -43,7 +46,7 @@ If you have run into problems during the installation (not unlikely!), try posti
         ```res0: String = Hello world!```
     - If so, your Scala installation functioning properly.
     
-If you are sick of installation and want to get started programming, this is all you need to complete Lesson 1. Otherwise, the next step is to install Intellij.
+If you are sick of installation and want to get started programming, this is all you need to complete Lesson 1. Otherwise, the next step is to install the Intellij IDE.
     
     
 ### Intellij Installation
