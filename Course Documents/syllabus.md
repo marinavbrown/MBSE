@@ -60,12 +60,12 @@ The approach that we follow in this course is based on a branch of mathematics c
 | * | 3/11 | No class. Spring break. |  |
 | 6 | 3/18 | Analyzing Behavior III: Dynamics | **HW2 Due.** |
 | 7 | 3/25 | Domain models | **Solo Presentation** |.
-| 8 | 4/1 | Semantic Modeling I: Schemas | HW3 assigned. **Due .** |
+| 8 | 4/1 | Semantic Modeling I: Schemas | HW3 assigned. **Due 4/22.** |
 | 9 | 4/8 | Semantic Modeling II: Data | |
-| 10 | 4/15 | Semantic Modeling III: Queries & Data Transformation | **HW3 Due.** Group project assigned. |
-| 11 | 4/22 | Semantic Bridges I: Aggregating Models | |
-| 12 | ? | Semantic Bridges II: Compositional Systems | |
-| 13 | 4/29 | System models| **Group Presentation**|
+| 10 | 4/15 | Semantic Modeling III: Queries & Data Transformation | |
+| 11 | 4/22 | Semantic Bridges I: Aggregating Models | **HW3 Due.** |
+| 12 | 4/29 | Semantic Bridges II: Compositional Systems | |
+| 13 | 5/2 or 5/3 | System models| **Group Presentation.**|
 | * | 5/6 | No exam. Final Report Due  | **Group Report Due.** |
 
 \*Subject to change
