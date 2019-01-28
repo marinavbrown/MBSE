@@ -22,7 +22,7 @@ Monday, 3:30 PM - 6:00 PM
 ##### Course Materials:
  Course materials will be distributed electronically through the course [Github site](https://github.com/sjbreiner/MBSE).
  
- Readings will be posted [here](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/Reading/reading.md).
+ Readings will be posted [here](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/reading.md).
  
  Homeworks will be posted [here](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/Homework)
  
