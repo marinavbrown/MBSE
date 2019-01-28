@@ -24,7 +24,7 @@ Monday, 3:30 PM - 6:00 PM
  
  Readings will be posted [here](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/reading.md).
  
- Homeworks will be posted [here](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/Homework)
+ Homeworks will be posted [here](https://github.com/sjbreiner/MBSE/tree/master/Homework)
  
  Other course documents (like this syllabus) can be found [here](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/)
 
