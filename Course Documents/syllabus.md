@@ -51,21 +51,20 @@ The approach that we follow in this course is based on a branch of mathematics c
 
 | Week | Date | Topic | Milestone(s) |
 |---|---|---|---|
-| 1 | 1/14 | Models in Systems Engineering | HW0 (questionnaire) assigned. **Due 1/22.** |
-| * | 1/21 | No class. MLK Day | |
-| 2 | 1/28 | Process Modeling I: Process Models | HW1 assigned. **Due 2/11.**|
-| 3 | 2/4 | Process Modeling II: Refinement & Abstraction | |
-| 4 | 2/11 | Analyzing Behavior I: Computation | **HW1 Due.** HW2 assigned. **Due 3/4.** |
-| * | 2/18 | No class. President's Day | |
-| 5 | 2/25 | Analyzing Behavior II: Probability | |
-| 6 | 3/4 | Analyzing Behavior III: Dynamics | **HW2 Due.** |
+| 1 | 1/28 | Models in Systems Engineering | **HW0 assigned.** **Due 2/4**. |
+| 2 | 2/4 | Process Modeling I: Process Models | **HW0 Due**. HW1 assigned. **Due 2/18.**|
+| 3 | 2/11 | Process Modeling II: Refinement & Abstraction | |
+| 4 | 2/18 | Analyzing Behavior I: Computation | **HW1 Due.** HW2 assigned. **Due 3/4.** |
+| * | 2/25 | No class. President's Day | |
+| 5 | 3/4 | Analyzing Behavior II: Probability | |
 | * | 3/11 | No class. Spring break. |  |
-| 7 | 3/18 | Domain models | **Solo Presentation** |.
-| 8 | 3/25 | Semantic Modeling I: Schemas | HW3 assigned. **Due .** |
-| 9 | 4/1 | Semantic Modeling II: Data | |
-| 10 | 4/8 | Semantic Modeling III: Queries & Data Transformation | **HW3 Due.** Group project assigned. |
-| 11 | 4/15 | Semantic Bridges I: Aggregating Models | |
-| 12 | 4/22 | Semantic Bridges II: Compositional Systems | |
+| 6 | 3/18 | Analyzing Behavior III: Dynamics | **HW2 Due.** |
+| 7 | 3/25 | Domain models | **Solo Presentation** |.
+| 8 | 4/1 | Semantic Modeling I: Schemas | HW3 assigned. **Due .** |
+| 9 | 4/8 | Semantic Modeling II: Data | |
+| 10 | 4/15 | Semantic Modeling III: Queries & Data Transformation | **HW3 Due.** Group project assigned. |
+| 11 | 4/22 | Semantic Bridges I: Aggregating Models | |
+| 12 | ? | Semantic Bridges II: Compositional Systems | |
 | 13 | 4/29 | System models| **Group Presentation**|
 | * | 5/6 | No exam. Final Report Due  | **Group Report Due.** |
 
