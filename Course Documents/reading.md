@@ -20,3 +20,4 @@
 + Mary Shaw - [Abstraction: Imposing Order on Complexity in Software Design](https://www.nap.edu/read/11106/chapter/6) ([PDF](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/pdfs/Shaw-NAP-Abstraction.pdf))
 
 
+
