@@ -12,13 +12,11 @@
 
 + Wikipedia - [PERT](https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique)
 
-<!--
 #### Week 2
 
-+ Function reading 
-+ Petri reading 
-+ Composition \& abstraction reading
++ David Spivak - [Category Theory for the Sciences](https://mitpress.mit.edu/books/category-theory-sciences) ([Free early version](http://math.mit.edu/~dspivak/CT4S.pdf)), Section 2.1 - Sets & Functions
++ Jiacun Wang - [Petri Nets for Dynamic Event-Driven System Modeling](http://bluehawk.monmouth.edu/~jwang/Petri%20Nets%20--%20Introduction.pdf)
++ Stavros Tripakis - [Compositionality in the Science of System Design](https://users.ics.aalto.fi/stavros/papers/pieee-published.pdf)
++ Mary Shaw - [Abstraction: Imposing Order on Complexity in Software Design](https://www.nap.edu/read/11106/chapter/6) ([PDF](https://github.com/sjbreiner/MBSE/blob/master/Course%20Documents/pdfs/Shaw-NAP-Abstraction.pdf))
 
--->
 
-test
